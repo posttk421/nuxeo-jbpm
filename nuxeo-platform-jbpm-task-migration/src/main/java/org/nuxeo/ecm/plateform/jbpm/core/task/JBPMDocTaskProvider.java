@@ -33,6 +33,7 @@ import org.nuxeo.ecm.core.api.ClientException;
 import org.nuxeo.ecm.core.api.CoreSession;
 import org.nuxeo.ecm.core.api.DocumentModel;
 import org.nuxeo.ecm.core.api.NuxeoPrincipal;
+import org.nuxeo.ecm.core.api.SortInfo;
 import org.nuxeo.ecm.platform.jbpm.JbpmEventNames;
 import org.nuxeo.ecm.platform.jbpm.JbpmOperation;
 import org.nuxeo.ecm.platform.jbpm.JbpmService;
@@ -111,6 +112,11 @@ public class JBPMDocTaskProvider implements TaskProvider {
     }
 
     @Override
+    public List<Task> getCurrentTaskInstances(CoreSession coreSession, List<SortInfo> list) {
+        return null;
+    }
+
+    @Override
     public List<Task> getCurrentTaskInstances(final List<String> actors,
             final CoreSession coreSession) throws ClientException {
         @SuppressWarnings("unchecked")
@@ -136,6 +142,11 @@ public class JBPMDocTaskProvider implements TaskProvider {
                     }
                 });
         return migratedTasks;
+    }
+
+    @Override
+    public List<Task> getCurrentTaskInstances(List<String> list, CoreSession coreSession, List<SortInfo> list1) {
+        return null;
     }
 
     @Override
@@ -227,6 +238,16 @@ public class JBPMDocTaskProvider implements TaskProvider {
                     }
                 });
         return migratedTasks;
+    }
+
+    @Override
+    public List<Task> getTaskInstances(DocumentModel documentModel, List<String> list, boolean b, CoreSession coreSession) {
+        return getTaskInstances(documentModel, list, coreSession);
+    }
+
+    @Override
+    public List<Task> getAllCurrentTaskInstances(CoreSession coreSession, List<SortInfo> list) {
+        return null;
     }
 
     public String endTask(CoreSession coreSession, NuxeoPrincipal principal,

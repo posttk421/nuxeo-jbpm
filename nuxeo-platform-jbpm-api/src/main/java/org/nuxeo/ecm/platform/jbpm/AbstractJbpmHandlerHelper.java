@@ -122,7 +122,7 @@ public abstract class AbstractJbpmHandlerHelper implements ActionHandler,
         Map<String, Serializable> context = new HashMap<String, Serializable>();
         context.put("principal", principal);
         try {
-            return CoreInstance.getInstance().open(repositoryName, context);
+            return CoreInstance.openCoreSession(repositoryName, context);
         } catch (ClientException e) {
             throw new NuxeoJbpmException(e);
         }
@@ -134,7 +134,7 @@ public abstract class AbstractJbpmHandlerHelper implements ActionHandler,
     }
 
     protected void closeCoreSession(CoreSession session) {
-        CoreInstance.getInstance().close(session);
+        CoreInstance.closeCoreSession(session);
     }
 
     /** @deprecated since 5.4 */

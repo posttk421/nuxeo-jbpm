@@ -94,10 +94,10 @@ public class JBPMTaskWrapper implements Task {
         return String.valueOf(ti.getId());
     }
 
-    @Override
-    public String getTargetDocumentId() {
-        return targetDocId;
-    }
+//    @Override
+//    public String getTargetDocumentId() {
+//        return targetDocId;
+//    }
 
     @Override
     public List<String> getActors() throws ClientException {
@@ -200,10 +200,10 @@ public class JBPMTaskWrapper implements Task {
         throw new UnsupportedOperationException();
     }
 
-    @Override
-    public void setTargetDocumentId(String targetDocumentId) {
-        throw new UnsupportedOperationException();
-    }
+//    @Override
+//    public void setTargetDocumentId(String targetDocumentId) {
+//        throw new UnsupportedOperationException();
+//    }
 
     @Override
     public void setName(String name) throws ClientException {
@@ -261,6 +261,26 @@ public class JBPMTaskWrapper implements Task {
         throw new UnsupportedOperationException();
     }
 
+    @Override
+    public List<String> getDelegatedActors() {
+        return null;
+    }
+
+    @Override
+    public void setDelegatedActors(List<String> list) {
+
+    }
+
+    @Override
+    public List<String> getTargetDocumentsIds() {
+        return null;
+    }
+
+    @Override
+    public void setTargetDocumentsIds(List<String> list) {
+
+    }
+
     /**
      * @since 5.6
      */
@@ -285,11 +305,21 @@ public class JBPMTaskWrapper implements Task {
         return null;
     }
 
+    @Override
+    public String getProcessName() {
+        return null;
+    }
+
     /**
      * @since 5.6
      */
     @Override
     public void setProcessId(String processId) throws ClientException {
         // do nothing
+    }
+
+    @Override
+    public void setProcessName(String s) {
+
     }
 }

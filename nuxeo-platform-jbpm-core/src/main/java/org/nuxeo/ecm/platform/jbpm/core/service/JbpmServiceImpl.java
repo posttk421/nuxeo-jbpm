@@ -544,14 +544,14 @@ public class JbpmServiceImpl implements JbpmService {
         Map<String, Serializable> context = new HashMap<String, Serializable>();
         context.put("principal", principal);
         try {
-            return CoreInstance.getInstance().open(repositoryName, context);
+            return CoreInstance.openCoreSession(repositoryName, context);
         } catch (ClientException e) {
             throw new NuxeoJbpmException(e);
         }
     }
 
     protected void closeCoreSession(CoreSession session) {
-        CoreInstance.getInstance().close(session);
+        CoreInstance.closeCoreSession(session);
     }
 
     @Override

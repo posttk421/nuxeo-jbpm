@@ -57,7 +57,7 @@ public class AddRightsActionHandler extends AbstractJbpmHandlerHelper {
     protected CoreSession getSystemSession() throws Exception {
         String repositoryName = getDocumentRepositoryName();
         try {
-            return CoreInstance.getInstance().open(repositoryName, null);
+            return CoreInstance.openCoreSession(repositoryName);
         } catch (ClientException e) {
             throw new NuxeoJbpmException(e);
         }

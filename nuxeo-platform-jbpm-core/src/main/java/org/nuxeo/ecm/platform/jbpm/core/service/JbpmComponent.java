@@ -85,47 +85,50 @@ public class JbpmComponent extends DefaultComponent {
 
     @Override
     public void registerContribution(Object contribution,
-            String extensionPoint, ComponentInstance contributor)
-            throws Exception {
+            String extensionPoint, ComponentInstance contributor) {
         ExtensionPoint ep = Enum.valueOf(ExtensionPoint.class, extensionPoint);
-        switch (ep) {
-        case deployer:
-            DeployerDescriptor desc = (DeployerDescriptor) contribution;
-            deployerDesc.put(desc.getName(), desc.getKlass().newInstance());
-            break;
-        case processDefinition:
-            pdDesc.put((ProcessDefinitionDescriptor) contribution, contributor);
-            break;
-        case activeConfiguration:
-            ActiveConfigurationDescriptor descriptor = (ActiveConfigurationDescriptor) contribution;
-            activeConfigurationName = descriptor.getName();
-            break;
-        case configurationPath:
-            ConfigurationPathDescriptor configPath = (ConfigurationPathDescriptor) contribution;
-            String path = configPath.getPath();
-            URL url = contributor.getRuntimeContext().getLocalResource(path);
-            if (url == null) {
-                throw new RuntimeException("Config not found: " + path);
+        try {
+            switch (ep) {
+                case deployer:
+                    DeployerDescriptor desc = (DeployerDescriptor) contribution;
+                    deployerDesc.put(desc.getName(), desc.getKlass().newInstance());
+                    break;
+                case processDefinition:
+                    pdDesc.put((ProcessDefinitionDescriptor) contribution, contributor);
+                    break;
+                case activeConfiguration:
+                    ActiveConfigurationDescriptor descriptor = (ActiveConfigurationDescriptor) contribution;
+                    activeConfigurationName = descriptor.getName();
+                    break;
+                case configurationPath:
+                    ConfigurationPathDescriptor configPath = (ConfigurationPathDescriptor) contribution;
+                    String path = configPath.getPath();
+                    URL url = contributor.getRuntimeContext().getLocalResource(path);
+                    if (url == null) {
+                        throw new RuntimeException("Config not found: " + path);
+                    }
+                    if (RUNTIME_CONFIGURATION.equals(configPath.getName())) {
+                        log.error("'runtime' is a reserved word for configuration. You should use another name for your configuration name");
+                    }
+                    paths.put(configPath.getName(), url);
+                    break;
+                case securityPolicy:
+                    SecurityPolicyDescriptor pmd = (SecurityPolicyDescriptor) contribution;
+                    service.addSecurityPolicy(pmd.getProcessDefinition(),
+                            pmd.getKlass().newInstance());
+                    break;
+                case typeFilter:
+                    TypeFilterDescriptor tfd = (TypeFilterDescriptor) contribution;
+                    typeFiltersContrib.put(tfd.getType(), tfd.getPDs());
+                    break;
             }
-            if (RUNTIME_CONFIGURATION.equals(configPath.getName())) {
-                log.error("'runtime' is a reserved word for configuration. You should use another name for your configuration name");
-            }
-            paths.put(configPath.getName(), url);
-            break;
-        case securityPolicy:
-            SecurityPolicyDescriptor pmd = (SecurityPolicyDescriptor) contribution;
-            service.addSecurityPolicy(pmd.getProcessDefinition(),
-                    pmd.getKlass().newInstance());
-            break;
-        case typeFilter:
-            TypeFilterDescriptor tfd = (TypeFilterDescriptor) contribution;
-            typeFiltersContrib.put(tfd.getType(), tfd.getPDs());
-            break;
+        } catch (InstantiationException | IllegalAccessException e) {
+            log.error("Error registering contribution", e);
         }
     }
 
     @Override
-    public void applicationStarted(ComponentContext context) throws Exception {
+    public void applicationStarted(ComponentContext context) {
         ClassLoader jbossCL = Thread.currentThread().getContextClassLoader();
         ClassLoader nuxeoCL = Framework.class.getClassLoader();
         try {
@@ -138,7 +141,7 @@ public class JbpmComponent extends DefaultComponent {
     }
 
     @Override
-    public void activate(ComponentContext context) throws Exception {
+    public void activate(ComponentContext context) {
         for (Map.Entry<ProcessDefinitionDescriptor, ComponentInstance> entry : pdDesc.entrySet()) {
             ProcessDefinitionDescriptor pdDescriptor = entry.getKey();
             ProcessDefinitionDeployer deployer = deployerDesc.get(pdDescriptor.getDeployer());
@@ -149,15 +152,19 @@ public class JbpmComponent extends DefaultComponent {
             }
             URL url = entry.getValue().getRuntimeContext().getResource(
                     pdDescriptor.getPath());
-            if (deployer.isDeployable(url)) {
-                log.debug("Deploying process definition: " + url.getPath());
-                deployer.deploy(url);
+            try {
+                if (deployer.isDeployable(url)) {
+                    log.debug("Deploying process definition: " + url.getPath());
+                    deployer.deploy(url);
+                }
+            } catch (Exception e) {
+                log.error("Error deploying process definition", e);
             }
         }
     }
 
     @Override
-    public void deactivate(ComponentContext context) throws Exception {
+    public void deactivate(ComponentContext context) {
         JobExecutor jobExecutor = getConfiguration().getJobExecutor();
         if (jobExecutor != null && jobExecutor.isStarted()) {
             jobExecutor.stop();

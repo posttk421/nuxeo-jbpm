@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.nuxeo.ecm.platform</groupId>
     <artifactId>nuxeo-platform-jbpm</artifactId>
-    <version>5.7.3</version>
+    <version>9.2-SNAPSHOT</version>
   </parent>
 
   <artifactId>nuxeo-platform-jbpm-core</artifactId>
@@ -29,6 +29,7 @@
     <dependency>
       <groupId>org.osgi</groupId>
       <artifactId>osgi-core</artifactId>
+      <version>4.1</version>
     </dependency>
     <dependency>
       <groupId>javax.transaction</groupId>
@@ -58,6 +59,7 @@
     <dependency>
       <groupId>org.nuxeo.ecm.platform</groupId>
       <artifactId>nuxeo-platform-jbpm-api</artifactId>
+      <version>9.2-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.nuxeo.ecm.platform</groupId>
@@ -75,13 +77,17 @@
       <groupId>org.nuxeo.ecm.platform</groupId>
       <artifactId>nuxeo-platform-notification-api</artifactId>
     </dependency>
-
-    <!-- test -->
     <dependency>
       <groupId>org.nuxeo.runtime</groupId>
       <artifactId>nuxeo-runtime-jtajca</artifactId>
-      <scope>test</scope>
     </dependency>
+
+    <!-- test -->
+    <!--<dependency>-->
+      <!--<groupId>org.nuxeo.runtime</groupId>-->
+      <!--<artifactId>nuxeo-runtime-jtajca</artifactId>-->
+      <!--<scope>test</scope>-->
+    <!--</dependency>-->
     <dependency>
       <groupId>org.nuxeo.ecm.platform</groupId>
       <artifactId>nuxeo-platform-content-template-manager</artifactId>
@@ -100,6 +106,7 @@
     <dependency>
       <groupId>org.nuxeo.ecm.platform</groupId>
       <artifactId>nuxeo-platform-jbpm-test</artifactId>
+      <version>9.2-SNAPSHOT</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -130,6 +137,7 @@
     <dependency>
       <groupId>net.sf.opencsv</groupId>
       <artifactId>opencsv</artifactId>
+      <version>2.3</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -144,7 +152,8 @@
     </dependency>
     <dependency>
       <groupId>cglib</groupId>
-      <artifactId>cglib</artifactId>
+      <artifactId>cglib-nodep</artifactId>
+      <version>2.2</version>
       <scope>test</scope>
     </dependency>
     <dependency>

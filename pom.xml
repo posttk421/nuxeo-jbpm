@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.nuxeo</groupId>
     <artifactId>nuxeo-addons-parent</artifactId>
-    <version>5.7.3</version>
+    <version>9.2-SNAPSHOT</version>
   </parent>
 
   <groupId>org.nuxeo.ecm.platform</groupId>
@@ -26,5 +26,42 @@
     <module>nuxeo-platform-jbpm-task-migration</module>
     <module>nuxeo-platform-jbpm-gadgets</module>
   </modules>
+
+  <!--<build>-->
+    <!--<plugins>-->
+      <!--<plugin>-->
+        <!--<groupId>org.apache.maven.plugins</groupId>-->
+        <!--<artifactId>maven-dependency-plugin</artifactId>-->
+        <!--<executions>-->
+          <!--<execution>-->
+            <!--<id>copy-installed</id>-->
+            <!--<phase>install</phase>-->
+            <!--<goals>-->
+              <!--<goal>copy</goal>-->
+            <!--</goals>-->
+          <!--</execution>-->
+        <!--</executions>-->
+        <!--<configuration>-->
+          <!--<artifactItems>-->
+            <!--<artifactItem>-->
+              <!--<groupId>org.nuxeo.ecm.platform</groupId>-->
+              <!--<artifactId>nuxeo-platform-jbpm-core</artifactId>-->
+              <!--<version>${project.version}</version>-->
+              <!--<outputDirectory>${project.build.directory}</outputDirectory>-->
+            <!--</artifactItem>-->
+            <!--<artifactItem>-->
+              <!--<groupId>org.nuxeo.ecm.platform</groupId>-->
+              <!--<artifactId>nuxeo-platform-jbpm-web</artifactId>-->
+              <!--<version>${project.version}</version>-->
+              <!--<outputDirectory>${project.build.directory}</outputDirectory>-->
+            <!--</artifactItem>-->
+          <!--</artifactItems>-->
+          <!--<outputDirectory>${project.build.directory}/jars</outputDirectory>-->
+          <!--<overWriteReleases>false</overWriteReleases>-->
+          <!--<overWriteSnapshots>true</overWriteSnapshots>-->
+        <!--</configuration>-->
+      <!--</plugin>-->
+    <!--</plugins>-->
+  <!--</build>-->
 
 </project>
