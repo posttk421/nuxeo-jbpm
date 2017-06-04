@@ -2,8 +2,8 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.nuxeo</groupId>
-    <artifactId>nuxeo-addons-parent</artifactId>
+    <groupId>org.nuxeo.ecm.distribution</groupId>
+    <artifactId>nuxeo-distribution</artifactId>
     <version>9.2-SNAPSHOT</version>
   </parent>
 
@@ -13,8 +13,7 @@
   <packaging>pom</packaging>
 
   <description>
-    This service is a wrapper around jBPM to allow Task Management and Workflow
-    within Nuxeo Application.
+    This service is a wrapper around jBPM to allow Task Management and Workflow within Nuxeo Application.
   </description>
 
   <modules>
@@ -25,43 +24,7 @@
     <module>nuxeo-platform-jbpm-automation</module>
     <module>nuxeo-platform-jbpm-task-migration</module>
     <module>nuxeo-platform-jbpm-gadgets</module>
+    <module>nuxeo-jbpm-package</module>
   </modules>
-
-  <!--<build>-->
-    <!--<plugins>-->
-      <!--<plugin>-->
-        <!--<groupId>org.apache.maven.plugins</groupId>-->
-        <!--<artifactId>maven-dependency-plugin</artifactId>-->
-        <!--<executions>-->
-          <!--<execution>-->
-            <!--<id>copy-installed</id>-->
-            <!--<phase>install</phase>-->
-            <!--<goals>-->
-              <!--<goal>copy</goal>-->
-            <!--</goals>-->
-          <!--</execution>-->
-        <!--</executions>-->
-        <!--<configuration>-->
-          <!--<artifactItems>-->
-            <!--<artifactItem>-->
-              <!--<groupId>org.nuxeo.ecm.platform</groupId>-->
-              <!--<artifactId>nuxeo-platform-jbpm-core</artifactId>-->
-              <!--<version>${project.version}</version>-->
-              <!--<outputDirectory>${project.build.directory}</outputDirectory>-->
-            <!--</artifactItem>-->
-            <!--<artifactItem>-->
-              <!--<groupId>org.nuxeo.ecm.platform</groupId>-->
-              <!--<artifactId>nuxeo-platform-jbpm-web</artifactId>-->
-              <!--<version>${project.version}</version>-->
-              <!--<outputDirectory>${project.build.directory}</outputDirectory>-->
-            <!--</artifactItem>-->
-          <!--</artifactItems>-->
-          <!--<outputDirectory>${project.build.directory}/jars</outputDirectory>-->
-          <!--<overWriteReleases>false</overWriteReleases>-->
-          <!--<overWriteSnapshots>true</overWriteSnapshots>-->
-        <!--</configuration>-->
-      <!--</plugin>-->
-    <!--</plugins>-->
-  <!--</build>-->
 
 </project>

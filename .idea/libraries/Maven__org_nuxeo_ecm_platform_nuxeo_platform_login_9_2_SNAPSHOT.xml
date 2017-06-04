@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.nuxeo.ecm.platform:nuxeo-platform-login:9.2-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/nuxeo/ecm/platform/nuxeo-platform-login/9.2-SNAPSHOT/nuxeo-platform-login-9.2-20170526.045501-47.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/nuxeo/ecm/platform/nuxeo-platform-login/9.2-SNAPSHOT/nuxeo-platform-login-9.2-20170526.045501-47-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/nuxeo/ecm/platform/nuxeo-platform-login/9.2-SNAPSHOT/nuxeo-platform-login-9.2-20170526.045501-47-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

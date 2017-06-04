@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: net.sourceforge.yarfraw:yarfraw:0.92">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/yarfraw/yarfraw/0.92/yarfraw-0.92.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/yarfraw/yarfraw/0.92/yarfraw-0.92-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/yarfraw/yarfraw/0.92/yarfraw-0.92-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.nuxeo.lib.core:nuxeo-core-storage-sql-extensions:9.2-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/nuxeo/lib/core/nuxeo-core-storage-sql-extensions/9.2-SNAPSHOT/nuxeo-core-storage-sql-extensions-9.2-20170526.045406-47.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/nuxeo/lib/core/nuxeo-core-storage-sql-extensions/9.2-SNAPSHOT/nuxeo-core-storage-sql-extensions-9.2-20170526.045406-47-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/nuxeo/lib/core/nuxeo-core-storage-sql-extensions/9.2-SNAPSHOT/nuxeo-core-storage-sql-extensions-9.2-20170526.045406-47-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

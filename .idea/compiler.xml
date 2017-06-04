@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="nuxeo-platform-jbpm-api" />
+        <module name="nuxeo-platform-jbpm-automation" />
+        <module name="nuxeo-platform-jbpm-core" />
+        <module name="nuxeo-platform-jbpm-gadgets" />
+        <module name="nuxeo-platform-jbpm-task-migration" />
+        <module name="nuxeo-platform-jbpm-test" />
+        <module name="nuxeo-platform-jbpm-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="nuxeo-platform-jbpm" target="1.8" />
+      <module name="nuxeo-platform-jbpm-api" target="1.8" />
+      <module name="nuxeo-platform-jbpm-automation" target="1.8" />
+      <module name="nuxeo-platform-jbpm-core" target="1.8" />
+      <module name="nuxeo-platform-jbpm-gadgets" target="1.8" />
+      <module name="nuxeo-platform-jbpm-task-migration" target="1.8" />
+      <module name="nuxeo-platform-jbpm-test" target="1.8" />
+      <module name="nuxeo-platform-jbpm-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

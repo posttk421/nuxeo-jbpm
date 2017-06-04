@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/nuxeo-platform-jbpm.iml" filepath="$PROJECT_DIR$/nuxeo-platform-jbpm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nuxeo-platform-jbpm-api/nuxeo-platform-jbpm-api.iml" filepath="$PROJECT_DIR$/nuxeo-platform-jbpm-api/nuxeo-platform-jbpm-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nuxeo-platform-jbpm-automation/nuxeo-platform-jbpm-automation.iml" filepath="$PROJECT_DIR$/nuxeo-platform-jbpm-automation/nuxeo-platform-jbpm-automation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nuxeo-platform-jbpm-core/nuxeo-platform-jbpm-core.iml" filepath="$PROJECT_DIR$/nuxeo-platform-jbpm-core/nuxeo-platform-jbpm-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nuxeo-platform-jbpm-gadgets/nuxeo-platform-jbpm-gadgets.iml" filepath="$PROJECT_DIR$/nuxeo-platform-jbpm-gadgets/nuxeo-platform-jbpm-gadgets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nuxeo-platform-jbpm-task-migration/nuxeo-platform-jbpm-task-migration.iml" filepath="$PROJECT_DIR$/nuxeo-platform-jbpm-task-migration/nuxeo-platform-jbpm-task-migration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nuxeo-platform-jbpm-test/nuxeo-platform-jbpm-test.iml" filepath="$PROJECT_DIR$/nuxeo-platform-jbpm-test/nuxeo-platform-jbpm-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nuxeo-platform-jbpm-web/nuxeo-platform-jbpm-web.iml" filepath="$PROJECT_DIR$/nuxeo-platform-jbpm-web/nuxeo-platform-jbpm-web.iml" />
+    </modules>
+  </component>
+</project>
