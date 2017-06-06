@@ -14,8 +14,6 @@
     <artifact:print output="${outdir}/dependency-tree.log"/>
     <tstamp/>
 
-    <delete failonerror="false" dir="${outdir}/nxr"/>
-    <mkdir dir="${outdir}/nxr"/>
     <delete failonerror="false" dir="${outdir}/marketplace"/>
     <mkdir dir="${outdir}/marketplace"/>
     <copy todir="${outdir}/marketplace">
@@ -28,65 +26,28 @@
     <copy file="${outdir}/artifacts.properties" todir="${outdir}/marketplace/install"/>
     <copy file="${outdir}/test-artifacts.properties" todir="${outdir}/marketplace/install"/>
 
-    <!-- Base distribution NXR -->
-    <copy todir="${outdir}">
-      <!--<artifact:file key="org.nuxeo.ecm.distribution:nuxeo-distribution-cap::zip" />-->
-      <artifact:file key="org.nuxeo.ecm.distribution:nuxeo-nxr-server::zip" />
-    </copy>
-
     <!-- Nuxeo bundles -->
-    <copy todir="${outdir}/nxr/bundles" overwrite="true">
+    <copy todir="${outdir}/marketplace/install/bundles" overwrite="true">
       <artifact:set>
         <includes>
-          <artifact groupId="org.nuxeo*" />
-          <artifact groupId="nuxeo-studio" />
-          <!-- Include your artifacts using their groupId for instance -->
-          <artifact groupId="org.nuxeo.ecm.platform*" />
+          <artifact groupId="org.nuxeo.ecm.platform" artifactId="nuxeo-platform-jbpm-api" />
+          <artifact groupId="org.nuxeo.ecm.platform" artifactId="nuxeo-platform-jbpm-automation" />
+          <artifact groupId="org.nuxeo.ecm.platform" artifactId="nuxeo-platform-jbpm-core" />
+          <artifact groupId="org.nuxeo.ecm.platform" artifactId="nuxeo-platform-jbpm-gadgets" />
+          <artifact groupId="org.nuxeo.ecm.platform" artifactId="nuxeo-platform-jbpm-task-migration" />
+          <artifact groupId="org.nuxeo.ecm.platform" artifactId="nuxeo-platform-jbpm-web" />
         </includes>
-        <excludes>
-          <artifact groupId="${maven.project.groupId}" artifactId="${maven.project.artifactId}" version="${maven.project.version}" type="${maven.project.packaging}"/>
-          <artifact scope="test"/>
-          <artifact scope="provided"/>
-          <artifact type="pom"/>
-          <artifact groupId="org.nuxeo.lib*"/>
-        </excludes>
       </artifact:set>
     </copy>
     <!-- Third-party libraries -->
-    <copy todir="${outdir}/nxr/lib" overwrite="true">
+    <copy todir="${outdir}/marketplace/install/lib" overwrite="true">
       <artifact:set>
         <includes>
-          <artifact groupId="!org.nuxeo*" />
-          <artifact groupId="org.nuxeo.lib*" />
+          <artifact groupId="org.jbpm.jbpm3" artifactId="jbpm-jpdl" />
+          <artifact groupId="bsh" artifactId="bsh" />
         </includes>
-        <excludes>
-          <artifact scope="test" />
-          <artifact scope="provided" />
-          <artifact type="pom" />
-          <artifact groupId="nuxeo-studio" />
-          <!-- Filter out your artifacts using their groupId for instance -->
-          <artifact groupId="org.nuxeo.ecm.platform*"/>
-        </excludes>
       </artifact:set>
     </copy>
-    <nx:rmdups dir="${outdir}/nxr/lib"/>
-    <!-- Temporary ZIP Nuxeo NXR to compare with base distribution NXR -->
-    <zip destfile="${outdir}/nxr-${maven.project.version}.zip" basedir="${outdir}/nxr"/>
-    <!-- Optionally attach the NXR for later use by other modules -->
-    <artifact:attach file="${outdir}/nxr-${maven.project.version}.zip" classifier="nxr" type="zip"/>
-
-    <!-- Your MP only needs to include files not already provided by the base distribution -->
-    <nx:zipdiff
-      file1="${outdir}/nxr-${maven.project.version}.zip"
-      file2="${outdir}/nuxeo-nxr-server-${nuxeo.distribution.version}.zip"
-      includesfile="${outdir}/includes"
-      excludesfile="${outdir}/excludesfile"
-      patternsetid="nxr.versus.distribution"
-      ignoreContent="false"
-      ignoreContentPattern=".*\.jar$"></nx:zipdiff>
-    <unzip src="${outdir}/nxr-${maven.project.version}.zip" dest="${outdir}/marketplace/install">
-      <patternset refid="nxr.versus.distribution"/>
-    </unzip>
 
     <!-- Generate install.xml content -->
     <!-- See documentation at http://doc.nuxeo.com/x/IgIz -->
