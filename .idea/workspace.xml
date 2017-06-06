@@ -2,44 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93872d8f-19d3-4af1-9c0c-828f70f145ef" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nuxeo-jbpm-default/src/main/resources/META-INF/MANIFEST.MF" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/nuxeo-jbpm-package/src/main/resources/install/templates/default-j-b-p-m-workflow/nuxeo.defaults" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/nuxeo-jbpm-package/src/main/resources/install/templates/jbpm-assembly/nuxeo.defaults" afterPath="$PROJECT_DIR$/nuxeo-jbpm-package/src/main/resources/install/templates/nuxeo-jbpm-package/nuxeo.defaults" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/nuxeo-platform-jbpm-core/src/main/resources/OSGI-INF/default-wf-contrib.xml" afterPath="$PROJECT_DIR$/nuxeo-jbpm-default/src/main/resources/OSGI-INF/default-process-definitions-contrib.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/nuxeo-platform-jbpm-core/src/main/resources/OSGI-INF/nxdirectories-contrib.xml" afterPath="$PROJECT_DIR$/nuxeo-jbpm-default/src/main/resources/OSGI-INF/nxdirectories-contrib.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/nuxeo-platform-jbpm-core/src/main/resources/directories/continent.csv" afterPath="$PROJECT_DIR$/nuxeo-jbpm-default/src/main/resources/directories/continent.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/nuxeo-platform-jbpm-core/src/main/resources/directories/country.csv" afterPath="$PROJECT_DIR$/nuxeo-jbpm-default/src/main/resources/directories/country.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/nuxeo-platform-jbpm-core/src/main/resources/directories/l10ncoverage.csv" afterPath="$PROJECT_DIR$/nuxeo-jbpm-default/src/main/resources/directories/l10ncoverage.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/nuxeo-platform-jbpm-core/src/main/resources/directories/l10nsubjects.csv" afterPath="$PROJECT_DIR$/nuxeo-jbpm-default/src/main/resources/directories/l10nsubjects.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/nuxeo-platform-jbpm-core/src/main/resources/directories/language.csv" afterPath="$PROJECT_DIR$/nuxeo-jbpm-default/src/main/resources/directories/language.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/nuxeo-platform-jbpm-core/src/main/resources/directories/locale.csv" afterPath="$PROJECT_DIR$/nuxeo-jbpm-default/src/main/resources/directories/locale.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/nuxeo-platform-jbpm-core/src/main/resources/directories/nature.csv" afterPath="$PROJECT_DIR$/nuxeo-jbpm-default/src/main/resources/directories/nature.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/nuxeo-platform-jbpm-core/src/main/resources/directories/search_operators.csv" afterPath="$PROJECT_DIR$/nuxeo-jbpm-default/src/main/resources/directories/search_operators.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/nuxeo-platform-jbpm-core/src/main/resources/directories/subject.csv" afterPath="$PROJECT_DIR$/nuxeo-jbpm-default/src/main/resources/directories/subject.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/nuxeo-platform-jbpm-core/src/main/resources/directories/subtopic.csv" afterPath="$PROJECT_DIR$/nuxeo-jbpm-default/src/main/resources/directories/subtopic.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/nuxeo-platform-jbpm-core/src/main/resources/directories/topic.csv" afterPath="$PROJECT_DIR$/nuxeo-jbpm-default/src/main/resources/directories/topic.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/nuxeo-platform-jbpm-core/src/main/resources/process/parallel-review.xml" afterPath="$PROJECT_DIR$/nuxeo-jbpm-default/src/main/resources/process/parallel-review.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/nuxeo-platform-jbpm-core/src/main/resources/process/validation-review.xml" afterPath="$PROJECT_DIR$/nuxeo-jbpm-default/src/main/resources/process/validation-review.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_nuxeo_ecm_platform_nuxeo_platform_task_web_9_2_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_nuxeo_ecm_platform_nuxeo_platform_task_web_9_2_SNAPSHOT.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nuxeo-jbpm-package/nuxeo-jbpm-package.iml" afterPath="$PROJECT_DIR$/nuxeo-jbpm-package/nuxeo-jbpm-package.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nuxeo-jbpm-package/pom.xml" afterPath="$PROJECT_DIR$/nuxeo-jbpm-package/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nuxeo-jbpm-package/src/main/assemble/assembly.xml" afterPath="$PROJECT_DIR$/nuxeo-jbpm-package/src/main/assemble/assembly.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nuxeo-jbpm-package/src/main/resources/package.xml" afterPath="$PROJECT_DIR$/nuxeo-jbpm-package/src/main/resources/package.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nuxeo-platform-jbpm-api/nuxeo-platform-jbpm-api.iml" afterPath="$PROJECT_DIR$/nuxeo-platform-jbpm-api/nuxeo-platform-jbpm-api.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nuxeo-platform-jbpm-automation/nuxeo-platform-jbpm-automation.iml" afterPath="$PROJECT_DIR$/nuxeo-platform-jbpm-automation/nuxeo-platform-jbpm-automation.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nuxeo-platform-jbpm-core/nuxeo-platform-jbpm-core.iml" afterPath="$PROJECT_DIR$/nuxeo-platform-jbpm-core/nuxeo-platform-jbpm-core.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nuxeo-platform-jbpm-core/src/main/resources/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/nuxeo-platform-jbpm-core/src/main/resources/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nuxeo-platform-jbpm-gadgets/nuxeo-platform-jbpm-gadgets.iml" afterPath="$PROJECT_DIR$/nuxeo-platform-jbpm-gadgets/nuxeo-platform-jbpm-gadgets.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nuxeo-platform-jbpm-task-migration/nuxeo-platform-jbpm-task-migration.iml" afterPath="$PROJECT_DIR$/nuxeo-platform-jbpm-task-migration/nuxeo-platform-jbpm-task-migration.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nuxeo-platform-jbpm-test/nuxeo-platform-jbpm-test.iml" afterPath="$PROJECT_DIR$/nuxeo-platform-jbpm-test/nuxeo-platform-jbpm-test.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nuxeo-platform-jbpm-web/nuxeo-platform-jbpm-web.iml" afterPath="$PROJECT_DIR$/nuxeo-platform-jbpm-web/nuxeo-platform-jbpm-web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nuxeo-platform-jbpm.iml" afterPath="$PROJECT_DIR$/nuxeo-platform-jbpm.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nuxeo-jbpm-default/src/main/resources/OSGI-INF/nxdirectories-contrib.xml" afterPath="$PROJECT_DIR$/nuxeo-jbpm-default/src/main/resources/OSGI-INF/nxdirectories-contrib.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/nuxeo-platform-jbpm-core/target/" />
     <ignored path="$PROJECT_DIR$/nuxeo-platform-jbpm-gadgets/target/" />
@@ -84,8 +48,8 @@
       <file leaf-file-name="nxdirectories-contrib.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nuxeo-jbpm-default/src/main/resources/OSGI-INF/nxdirectories-contrib.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+            <state relative-caret-position="160">
+              <caret line="8" column="57" lean-forward="false" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -229,6 +193,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/nuxeo-jbpm-package/src/main/assemble/assembly.xml" />
         <option value="$PROJECT_DIR$/nuxeo-platform-jbpm-core/src/main/resources/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/nuxeo-jbpm-default/src/main/resources/OSGI-INF/nxdirectories-contrib.xml" />
       </list>
     </option>
   </component>
@@ -792,7 +757,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="1076" width="1920" height="1084" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -805,7 +769,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32925585" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32925585" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27604166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1146,8 +1110,8 @@
         <state relative-caret-position="210">
           <caret line="41" column="15" lean-forward="false" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
           <folding>
-            <element signature="e#1302#1303#0" expanded="true" />
-            <element signature="e#1356#1357#0" expanded="true" />
+            <element signature="e#1302#1303#0" expanded="false" />
+            <element signature="e#1356#1357#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1268,8 +1232,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nuxeo-jbpm-default/src/main/resources/OSGI-INF/nxdirectories-contrib.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        <state relative-caret-position="160">
+          <caret line="8" column="57" lean-forward="false" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
           <folding />
         </state>
       </provider>
