@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/nuxeo-jbpm-default/nuxeo-jbpm-default.iml" filepath="$PROJECT_DIR$/nuxeo-jbpm-default/nuxeo-jbpm-default.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nuxeo-jbpm-package/nuxeo-jbpm-package.iml" filepath="$PROJECT_DIR$/nuxeo-jbpm-package/nuxeo-jbpm-package.iml" />
       <module fileurl="file://$PROJECT_DIR$/nuxeo-platform-jbpm.iml" filepath="$PROJECT_DIR$/nuxeo-platform-jbpm.iml" />
       <module fileurl="file://$PROJECT_DIR$/nuxeo-platform-jbpm-api/nuxeo-platform-jbpm-api.iml" filepath="$PROJECT_DIR$/nuxeo-platform-jbpm-api/nuxeo-platform-jbpm-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/nuxeo-platform-jbpm-automation/nuxeo-platform-jbpm-automation.iml" filepath="$PROJECT_DIR$/nuxeo-platform-jbpm-automation/nuxeo-platform-jbpm-automation.iml" />

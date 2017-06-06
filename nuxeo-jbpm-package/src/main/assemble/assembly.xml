@@ -1,4 +1,4 @@
-<project name="jbpm-assembly" default="build" xmlns:nx="urn:nuxeo-build" xmlns:artifact="urn:nuxeo-artifact">
+<project name="nuxeo-jbpm-package" default="build" xmlns:nx="urn:nuxeo-build" xmlns:artifact="urn:nuxeo-artifact">
   <taskdef resource="org/nuxeo/build/antlib.xml" uri="urn:nuxeo-build"/>
   <taskdef resource="org/nuxeo/build/artifact/antlib.xml" uri="urn:nuxeo-artifact"/>
   <taskdef resource="net/sf/antcontrib/antlib.xml"/>
@@ -9,7 +9,6 @@
     <artifact:nuxeo-expand includeTestScope="true" groupPrefixes="org.nuxeo,org.nuxeo.ecm.platform"/>
     <!-- For Nuxeo IDE being able to use that distribution as a SDK -->
     <artifact:print output="${outdir}/artifacts.properties" mode="sdk"/>
-    <artifact:print output="${outdir}/test-artifacts.properties" mode="sdk" scopes="test"/>
     <!-- Prints the graph for debugging purpose -->
     <artifact:print output="${outdir}/dependency-tree.log"/>
     <tstamp/>
@@ -24,8 +23,6 @@
       </filterset>
     </copy>
     <copy file="${outdir}/artifacts.properties" todir="${outdir}/marketplace/install"/>
-    <copy file="${outdir}/test-artifacts.properties" todir="${outdir}/marketplace/install"/>
-
     <!-- Nuxeo bundles -->
     <copy todir="${outdir}/marketplace/install/bundles" overwrite="true">
       <artifact:set>
@@ -36,6 +33,7 @@
           <artifact groupId="org.nuxeo.ecm.platform" artifactId="nuxeo-platform-jbpm-gadgets" />
           <artifact groupId="org.nuxeo.ecm.platform" artifactId="nuxeo-platform-jbpm-task-migration" />
           <artifact groupId="org.nuxeo.ecm.platform" artifactId="nuxeo-platform-jbpm-web" />
+          <artifact groupId="org.nuxeo.ecm.platform" artifactId="nuxeo-jbpm-default" />
         </includes>
       </artifact:set>
     </copy>
@@ -74,8 +72,6 @@
       name="install.properties"
       value="${line.separator}
   &lt;copy file=&quot;${package.root}/install/artifacts.properties&quot;${line.separator}
-    todir=&quot;${env.server.home}/sdk&quot; overwrite=&quot;true&quot; /&gt;${line.separator}
-  &lt;copy file=&quot;${package.root}/install/test-artifacts.properties&quot;${line.separator}
     todir=&quot;${env.server.home}/sdk&quot; overwrite=&quot;true&quot; /&gt;"/>
 
     <var name="install.templates" value=""/>
@@ -86,7 +82,7 @@
           name="install.templates"
           value="${line.separator}
   &lt;copy dir=&quot;${package.root}/install/templates&quot; todir=&quot;${env.templates}&quot; overwrite=&quot;true&quot; /&gt;${line.separator}
-  &lt;config addtemplate=&quot;jbpm-assembly&quot; /&gt;${line.separator}"/>
+  &lt;config addtemplate=&quot;nuxeo-jbpm-package&quot; /&gt;${line.separator}"/>
       </then>
     </if>
 

@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.nuxeo.ecm.platform:nuxeo-platform-task-web:9.2-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/nuxeo/ecm/platform/nuxeo-platform-task-web/9.2-SNAPSHOT/nuxeo-platform-task-web-9.2-20170526.045953-47.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/nuxeo/ecm/platform/nuxeo-platform-task-web/9.2-SNAPSHOT/nuxeo-platform-task-web-9.2-20170604.045537-53.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/nuxeo/ecm/platform/nuxeo-platform-task-web/9.2-SNAPSHOT/nuxeo-platform-task-web-9.2-20170526.045953-47-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/nuxeo/ecm/platform/nuxeo-platform-task-web/9.2-SNAPSHOT/nuxeo-platform-task-web-9.2-20170604.045537-53-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/nuxeo/ecm/platform/nuxeo-platform-task-web/9.2-SNAPSHOT/nuxeo-platform-task-web-9.2-20170526.045953-47-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/nuxeo/ecm/platform/nuxeo-platform-task-web/9.2-SNAPSHOT/nuxeo-platform-task-web-9.2-20170604.045537-53-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

@@ -1,8 +1,8 @@
 <!-- See documentation at http://doc.nuxeo.com/x/HgIz -->
-<package type="addon" name="jbpm-assembly" version="@VERSION@">
-  <title>Jbpm assembly</title>
+<package type="addon" name="nuxeo-jbpm-package" version="@VERSION@">
+  <title>Nuxeo JBPM package</title>
   <description>
-    <p>Put here an HTML description of your Nuxeo Package.</p>
+    <p>Nuxeo Package for JBPM support.</p>
   </description>
   <!-- <home-page>http://doc.nuxeo.com/</home-page> -->
   <vendor></vendor>
