@@ -5,6 +5,8 @@ This addon provides an interface to manage workflows through the jBPM engine.
 It was included by default up to Nuxeo 5.5, but since Nuxeo 5.6 it has been deprecated and moved
 to a separate addon, and replaced by the new Document Routing module.
 
+This addon works with Nuxeo 9.2
+
 
 ## Building and deploying
 
@@ -12,17 +14,17 @@ to a separate addon, and replaced by the new Document Routing module.
 
 You can build this module with:
 
-    $ mvn clean install
+    $ mvn clean package -DskipTests
 
 ### How to deploy
 
 #### Deploy the module
 
-Copy the `nuxeo-platform-jbpm-*.jar` JARs into your Nuxeo instance in `nxserver/bundles` and restart.
+Inside target directory of nuxeo-jbpm-package module you will find a zip file which is a regular Nuxeo package and can be installed via nuxeoctl tool.
 
 #### Configure the Datasource
 
-Nuxeo jBPM relies on a Datasource `nxjbpm` which is already defined in a default Nuxeo 5.6 distribution.
+Nuxeo jBPM relies on a Datasource `nxjbpm` which you may need to define in your server's context.xml
 
 ## About Nuxeo
 
