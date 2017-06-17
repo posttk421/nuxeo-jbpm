@@ -25,7 +25,6 @@
     <module>nuxeo-platform-jbpm-task-migration</module>
     <module>nuxeo-platform-jbpm-gadgets</module>
     <module>nuxeo-jbpm-package</module>
-    <module>nuxeo-jbpm-default</module>
   </modules>
 
 </project>

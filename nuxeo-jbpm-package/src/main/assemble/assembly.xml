@@ -33,7 +33,6 @@
           <artifact groupId="org.nuxeo.ecm.platform" artifactId="nuxeo-platform-jbpm-gadgets" />
           <artifact groupId="org.nuxeo.ecm.platform" artifactId="nuxeo-platform-jbpm-task-migration" />
           <artifact groupId="org.nuxeo.ecm.platform" artifactId="nuxeo-platform-jbpm-web" />
-          <artifact groupId="org.nuxeo.ecm.platform" artifactId="nuxeo-jbpm-default" />
         </includes>
       </artifact:set>
     </copy>
@@ -67,6 +66,7 @@
   &lt;update file=&quot;${package.root}/install/lib&quot; todir=&quot;${env.lib}&quot; /&gt;"/>
       </then>
     </if>
+
 
     <var
       name="install.properties"
